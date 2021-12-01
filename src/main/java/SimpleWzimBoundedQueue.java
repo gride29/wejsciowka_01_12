@@ -4,8 +4,8 @@ public class SimpleWzimBoundedQueue<E> implements WzimBoundedQueue<E> {
 
     private Object[] queue;
     private int maxCapacity;
-    private int head = 1;
-    private int tail = 0;
+    private int head = 0;
+    private int tail = -1;
     private int currentSize = 0;
 
     public SimpleWzimBoundedQueue(final int maxCapacity) {
